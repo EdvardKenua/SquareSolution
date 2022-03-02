@@ -39,7 +39,7 @@ namespace SquareSolution // Note: actual namespace depends on the project name.
                     prevNum = CurNum;
                     CurNum = (1 / k) * ((k - 1) * prevNum + (NumToSqrt / Math.Pow(prevNum, k-1)));
                     Console.WriteLine(CurNum);
-                } while (Math.Abs(CurNum-prevNum) > E);
+                } while (Math.Abs(CurNum - prevNum) > E);
             }
         }
     }
