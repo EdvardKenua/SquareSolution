@@ -28,18 +28,18 @@ namespace SquareSolution // Note: actual namespace depends on the project name.
 
         public static void Main(string[] args)
         {
-            double z = 1, x = 0, y = 1, k = 2, E = 0.05, n = 0;
+            double prevNum = 1, NumToSqrt = 0, CurNum = 1, k = 2, E = 0.05;
             Console.WriteLine("Введите X: ");
-            x = Convert.ToDouble(Console.ReadLine());
+            NumToSqrt = Convert.ToDouble(Console.ReadLine());
 
-            if (x > 0)
+            if (NumToSqrt > 0)
             {
                 do
                 {
-                    z = y;
-                    y = (1 / k) * ((k - 1) * z + (x / Math.Pow(z, k-1)));
-                    Console.WriteLine(y);
-                } while (Math.Abs(y-z) > E);
+                    prevNum = CurNum;
+                    CurNum = (1 / k) * ((k - 1) * prevNum + (NumToSqrt / Math.Pow(prevNum, k-1)));
+                    Console.WriteLine(CurNum);
+                } while (Math.Abs(CurNum-prevNum) > E);
             }
         }
     }
