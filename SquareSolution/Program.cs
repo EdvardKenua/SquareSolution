@@ -6,22 +6,19 @@ namespace SquareSolution // Note: actual namespace depends on the project name.
 {
     public class Program
     {
-        //static double z = 1, k = 2, E = 0.001;
-
-        //public static double Square(int number)
+        //public static double E = 0.05, z = 1, y = 1, x = 0, k = 2;
+        //public static double Sqrt(double n)
         //{
-        //    double prevNum = 1;
-        //    if (number - prevNum > E)
+        //    z = y;
+        //    y = (1 / k) * ((k - 1) * z + (x / Math.Pow(z, k - 1))); TODO: Доработать формулу
+        //    Console.WriteLine(y);
+        //    if (Math.Abs(y - z) > E)
         //    {
-                
-        //        return number;
+        //        return Sqrt(y);
         //    }
         //    else
         //    {
-        //        prevNum = Square(number - 1);
-        //        Console.WriteLine(number);
-        //        return (1 / k) * (k - 1) * prevNum + (number / Math.Pow(prevNum, k - 1));
-                
+        //        return 0;
         //    }
         //}
 
